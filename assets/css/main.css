@@ -1,0 +1,217 @@
+:root {
+    --dark-matte-gray: #2c2c2c; /* Cinza fosco escuro */
+    --light-gray: #d3d3d3; /* Cinza mais claro */
+    --golden-yellow: #ffd700; /* Amarelo ouro */
+    --black-hover: #000000; /* Preto para hover dos cards */
+    --ice-color: #f8f9fa; /* Cor de gelo */
+  }
+
+  * {
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    padding-top: 0px; /* Ajuste para header fixo */
+    background-color: var(--dark-matte-gray) !important; /* Fundo cinza fosco escuro */
+    color: var(--ice-color); /* Texto principal com cor de gelo */
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden; /* Impede o scroll horizontal */
+}
+html {
+    overflow-x: hidden;
+    font-size: 87.5%; /* Base de 14px */
+}
+/* Compensação do scroll para a altura do cabeçalho */
+section {
+    scroll-margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
+}
+header {
+   
+    top: 0; /* Fica fixo no topo */
+    width: 100%; /* Para garantir que ocupe toda a largura */
+    z-index: 1000; /* Coloque um z-index alto para ficar acima de outros elementos */
+}
+
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 60px; /* Ajuste menor para dispositivos móveis */
+    }
+}
+
+
+/* Estilos personalizados */
+.text-golden-yellow, .suporte {
+    color: var(--golden-yellow); /* Aplicando a cor dourada */
+}
+
+.social-icon {
+    background-color: var(--cor-fundo-escuro); /* Cor de fundo do círculo */
+    border-radius: 50%; /* Faz os ícones ficarem circulares */
+    padding: 10px; /* Ajuste o tamanho do círculo */
+    display: inline-flex; /* Garante que o conteúdo fique centralizado */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Ajuste o tamanho do círculo */
+    height: 40px; /* Tamanho fixo para os ícones */
+    transition: background-color 0.3s ease; /* Adiciona um efeito suave de transição */
+}
+
+.social-icon:hover {
+    background-color: #2c313c; /* Muda para a cor dourada no hover */
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid var(--light-gray); /* Linha fina de cor cinza claro */
+    margin: 0; /* Remover margens */
+    width: 100%; /* Linha ocupa toda a largura */
+}
+
+
+.catalogos {
+    background-color: #2c2c2c; /* Cor de fundo escura */
+    color: #f5f5f5; /* Texto claro */
+}
+
+.catalogos h2 {
+    color: var(--golden-yellow); /* Cor dourada para o título */
+}
+
+.catalogo-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.catalogo-card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.catalogo-card a {
+    background-color: var(--golden-yellow);
+    border-color: var(--golden-yellow);
+    color: #000;
+}
+
+.catalogo-card a:hover {
+    background-color: #000;
+    color: var(--golden-yellow);
+}
+
+
+.catalogo-card {
+    background-color: var(--light-gray);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .catalogo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(--black-hover);
+  }
+  
+  .catalogo-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .catalogo-card .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .catalogo-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--dark-matte-gray);
+  }
+  
+  .catalogo-card .card-title:hover {
+    color: var(--golden-yellow);
+  }
+  
+  .catalogo-card .card-text {
+    font-size: 0.9rem;
+    color: var(--dark-matte-gray);
+  }
+  
+  .catalogo-card .card-price {
+    font-size: 1.1rem;
+    color: var(--golden-yellow);
+    margin-bottom: 10px;
+  }
+  
+  .card-rating i {
+    margin-right: 3px;
+    font-size: 1.2rem;
+  }
+  
+  .hidden-cards {
+    display: none;
+  }
+  
+  .btn-golden-yellow {
+    background-color: var(--golden-yellow);
+    color: var(--dark-matte-gray);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-golden-yellow:hover {
+    background-color: var(--dark-matte-gray);
+    color: var(--golden-yellow);
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    margin-top: 15px; /* Ajuste o valor conforme necessário */
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-matte-gray);
+  color: #fff;
+}
+
+.footer h5 {
+  color: var(--golden-yellow);
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--black-hover);
+  text-decoration: underline;
+}
+
+.footer .text-ice-color {
+  color: #e0e0e0;
+}
+
+.footer .btn-golden-yellow {
+  background-color: var(--black-hover);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.footer .btn-golden-yellow:hover {
+  background-color: #f5b500;
+}
