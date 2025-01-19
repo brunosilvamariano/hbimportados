@@ -1,7 +1,7 @@
 :root {
     --dark-matte-gray: #2c2c2c; /* Cinza fosco escuro */
     --light-gray: #d3d3d3; /* Cinza mais claro */
-    --golden-yellow: #ffd700; /* Amarelo ouro */
+    --golden-yellow: #FFD700; /* Amarelo ouro */
     --black-hover: #000000; /* Preto para hover dos cards */
     --ice-color: #f8f9fa; /* Cor de gelo */
   }
@@ -106,7 +106,7 @@ header {
 
 
 .catalogo-card {
-    background-color: var(--light-gray);
+    background-color: #414141be; 
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
@@ -133,7 +133,7 @@ header {
   .catalogo-card .card-title {
     font-size: 1.25rem;
     font-weight: bold;
-    color: var(--dark-matte-gray);
+    color: rgb(226, 226, 226);
   }
   
   .catalogo-card .card-title:hover {
@@ -142,7 +142,7 @@ header {
   
   .catalogo-card .card-text {
     font-size: 0.9rem;
-    color: var(--dark-matte-gray);
+    color: rgb(163, 163, 163);
   }
   
   .catalogo-card .card-price {
